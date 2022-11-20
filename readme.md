@@ -5,4 +5,7 @@ Fourth line now.
 Fifth to be commited.
 Sixth one to be checked.
 Seventh.
+
 Eighth.
+Fifth to be commited.
+New checking.
