@@ -5,3 +5,4 @@ Fourth line now.
 Fifth to be commited.
 Newest line writing.
 Checking for the new line itself.
+writing again.
