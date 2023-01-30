@@ -1,7 +1,7 @@
 node {
 checkout scm: [
     $class: 'GitSCM',
-    branches: scm.branches,
+    branches: [[name: "${env.GIT_COMMIT}"]],
     extensions: [
         [$class: 'SubmoduleOption',
         disableSubmodules: false,
