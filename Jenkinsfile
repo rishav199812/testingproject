@@ -1,7 +1,7 @@
 node {
 checkout scm: [
     $class: 'GitSCM',
-    branches: [[name: "${env.GIT_COMMIT}"]],
+    branches: scm.branches,
     extensions: [
         [$class: 'SubmoduleOption',
         disableSubmodules: false,
@@ -23,6 +23,7 @@ pipeline{
                 sh "git submodule add -b testnew https://github.com/rishav199812/updatedrepo.git"
                 sh "git submodule status"
                 sh "git submodule update"
+                sh "printenv"
 //                 sh "git submodule update --init --recursive"
 //                 sh "git submodule update --remote"
             }
