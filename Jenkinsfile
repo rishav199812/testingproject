@@ -6,7 +6,7 @@ checkout scm: [
         disableSubmodules: false,
         parentCredentials: false,
         recursiveSubmodules: true,
-        reference: 'https://github.com/softwareschneiderei/ADS.git',
+        reference: 'https://github.com/rishav199812/updatedrepo.git',
         shallow: true,
         trackingSubmodules: false]
     ],
