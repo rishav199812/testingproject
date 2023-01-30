@@ -1,3 +1,4 @@
+node {
 checkout scm: [
     $class: 'GitSCM',
     branches: scm.branches,
@@ -13,6 +14,7 @@ checkout scm: [
     submoduleCfg: [],
     userRemoteConfigs: scm.userRemoteConfigs
 ]
+}
 pipeline{
     agent any
     stages{
