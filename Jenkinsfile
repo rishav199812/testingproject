@@ -1,11 +1,7 @@
 node {
 checkout scm: [
     $class: 'GitSCM',
-    branches: [
-      [
-        name: '*/deven'
-      ]
-    ], 
+    branches: scm.branches, 
     extensions: [
         [$class: 'SubmoduleOption',
         disableSubmodules: false,
@@ -29,7 +25,7 @@ pipeline{
                 sh "git submodule update"
                 sh "printenv"
 //                 sh "git submodule update --init --recursive"
-//                 sh "git submodule update --remote"
+                 sh "git submodule update --remote"
             }
         }
         stage('Hello'){
