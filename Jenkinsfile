@@ -1,18 +1,18 @@
-checkout scm: [
-    $class: 'GitSCM',
-    branches: scm.branches,
-    extensions: [
-        [$class: 'SubmoduleOption',
-        disableSubmodules: false,
-        parentCredentials: false,
-        recursiveSubmodules: true,
-        reference: 'https://github.com/rishav199812/updatedrepo.git',
-        shallow: true,
-        trackingSubmodules: false]
-    ],
-    submoduleCfg: [],
-    userRemoteConfigs: scm.userRemoteConfigs
-]
+// checkout scm: [
+//     $class: 'GitSCM',
+//     branches: scm.branches,
+//     extensions: [
+//         [$class: 'SubmoduleOption',
+//         disableSubmodules: false,
+//         parentCredentials: false,
+//         recursiveSubmodules: true,
+//         reference: 'https://github.com/rishav199812/updatedrepo.git',
+//         shallow: true,
+//         trackingSubmodules: false]
+//     ],
+//     submoduleCfg: [],
+//     userRemoteConfigs: scm.userRemoteConfigs
+// ]
 pipeline{
     agent any
     stages{
