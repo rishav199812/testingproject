@@ -1,7 +1,11 @@
 node {
 checkout scm: [
     $class: 'GitSCM',
-    branches: scm.branches,
+    branches: [
+      [
+        name: '*/deven'
+      ]
+    ], 
     extensions: [
         [$class: 'SubmoduleOption',
         disableSubmodules: false,
