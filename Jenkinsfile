@@ -21,7 +21,7 @@ pipeline{
         stage('Test'){
             steps {
                 //sh "git rm -r --cached updatedrepo"
-                sh "git submodule add -b testnew https://github.com/rishav199812/updatedrepo.git"
+                sh "git submodule add -b testnew https://github.com/rishav199812/updatedrepo.git updatedrepo"
                 //sh "git submodule status"
                 sh "git submodule update --remote"
                 sh "printenv"
