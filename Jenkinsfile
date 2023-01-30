@@ -5,7 +5,7 @@ checkout scm: [
     extensions: [
         [$class: 'SubmoduleOption',
         disableSubmodules: false,
-        parentCredentials: false,
+        parentCredentials: true,
         recursiveSubmodules: true,
         reference: 'https://github.com/rishav199812/updatedrepo.git',
         shallow: true,
