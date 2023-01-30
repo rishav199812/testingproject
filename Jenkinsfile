@@ -22,6 +22,7 @@ pipeline{
             steps {
                 sh "git submodule add -b testnew https://github.com/rishav199812/updatedrepo.git"
                 sh "git submodule update --init --recursive"
+                sh "git submodule update --remote"
             }
         }
         stage('Hello'){
